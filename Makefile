@@ -68,4 +68,3 @@ build:
 .PHONY: validate
 validate: ## Validate files license header
 	docker run --rm -v $(CURDIR):/work -w /work $(GOLANG_IMAGE) bash -c 'go get -u github.com/kunalkushwaha/ltag && ./scripts/validate/fileheader'
-
